@@ -15,11 +15,22 @@
 - 보통 Github 웹사이트에서 repo 생성 후 HTTPS url을 이용해 clone을 받아 작업을 시작한다.
 - 폴더을 생성하고 터미널로 해당 폴더에서 git init을 해주면 .git(안보임)이 생성되고 깃 저장소로 만들어준다.
 
-## 🍎 파일을 스테이징 영역에서 제거
-- 스테이징 영역에 잘못 추가된 파일이 있다면 다시 untracked 시켜 작업 디렉토리로 되돌릴 수 있다.
+## 🍎 특정 파일을 추적 대상에서 제외 시키기
 ```bash
 git rm --cached README.md 
 git status
+```
+- Git에서 특정 파일을 인덱스(stage)에서 제거하지만, 작업 디렉토리에서 실제 파일은 삭제하지 않는 명령어.
+- 이 명령어를 사용하면 파일이 Git의 추적 대상에서 제외되지만, 로컬 디렉토리에서는 그대로 남아 있게된다.
+
+## 🍎 git add 명령어로 staging한 파일들을 unstaged 상태로 되돌리기
+- 현재 stage 상태의 모든 파일을 unstaged 상태로 되돌리는 명령어
+```bash
+git reset
+```
+- 특정 파일을 unstaged 상태로 되돌리는 명령어
+```bash
+git reset README.md
 ```
 
 ## 🍎 브랜치 생성
