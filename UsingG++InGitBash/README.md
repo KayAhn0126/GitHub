@@ -54,7 +54,13 @@ g++ hello.cpp -o myFirstProgram
 ```
 - "-c" 옵션을 사용해 Linking 전까지만 진행해 목적 파일(*.o)를 얻는 방법과, "-g" 옵션을 사용해 디버깅을 용이하게 할 수도 있다.
 
-
+## 🍎 PATH 환경변수
+- 어떻게 화면에 g++ 명령어만으로 cpp 파일을 컴파일을 할 수 있을까? → 환경변수 덕분이다.
+- 사용자가 명령 프롬프트(PowerShell or GitBash)에서 g++를 입력하게 되면 아래와 같은 절차로 g++ 실행파일(.exe)을 찾는다.
+    - 먼저 현재 작업 디렉토리에서 g++.exe라는 실행 파일을 찾는다.
+    - 현재 디렉터리에 g++.exe 파일을 찾을 수 없다면, 환경변수 PATH에 저장된 디렉터리들을 순차적으로 검색하면서 g++라는 실행파일(.exe)를 찾는다.
+    - 환경변수에 저장된 디렉터리에 있다면 해당 실행파일을 실행해 cpp 파일을 컴파일한다.
+    - 없다면 "command not found"를 반환한다.
 
 ## 🍎 참고 자료
 - [GitBash or Windows에서 GCC, G++ 사용하기](https://sooseongcom.com/post/MinGW-w64-HowToInstall)
