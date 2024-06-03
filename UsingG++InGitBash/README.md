@@ -7,11 +7,11 @@
 
 ### 📖 다운로드
 - sourceforge.net이라는 웹사이트에서 MinGW64를 설치해야 한다.
-- 아래의 웹사이트 주소로 접속하면 상단에 "MinGW-w64 - for 32 and 64 bit Wondows"라고 적힌 페이지를 볼 수 있다.
+- 아래의 웹사이트 주소로 접속하면 상단에 "MinGW-w64 - for 32 and 64 bit Windows"라고 적힌 페이지를 볼 수 있다.
     - [MinGW64 Download](https://sourceforge.net/projects/mingw-w64/files/)
 - files 탭이 선택되었는지 확인하고 스크롤을 내려 MinGW-W64 GCC-8.1.0 카테고리로 온다.
+- 아래와 같은 카테고리를 볼 수 있다면 "x86_64-posix-seh"를 다운로드한다.
 ![sourceforge](https://github.com/KayAhn0126/GitHub/assets/40224884/844787d3-7a08-49da-ba85-c18c1882e483)
-- 위와 같은 카테고리를 볼 수 있다면 "x86_64-posix-seh"를 다운로드한다.
 
 ### 📖 압축 풀기
 - 다운로드하게 되면 "x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z"라는 압축 폴더을 볼 수 있다.
