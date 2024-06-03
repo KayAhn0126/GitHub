@@ -11,6 +11,7 @@
     - [MinGW64 Download](https://sourceforge.net/projects/mingw-w64/files/)
 - files 탭이 선택되었는지 확인하고 스크롤을 내려 MinGW-W64 GCC-8.1.0 카테고리로 온다.
 - 아래와 같은 카테고리를 볼 수 있다면 "x86_64-posix-seh"를 다운로드한다.
+
 ![sourceforge](https://github.com/KayAhn0126/GitHub/assets/40224884/844787d3-7a08-49da-ba85-c18c1882e483)
 
 ### 📖 압축 풀기
