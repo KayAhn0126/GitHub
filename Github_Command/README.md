@@ -2,7 +2,7 @@
 
 ## 🍎 작업 상태
 - modified - 수정은 되었지만 로컬 저장소에 커밋하지 않은 상태
-- staged - Staging Ares에 추가된 상태
+- staged - Staging Area에 추가된 상태
 - commited - 커밋한 상태
 - pushed - 원격 저장소로 밀어넣은 상태
 
@@ -144,6 +144,35 @@ git push origin main
 ## 🍎 줄 단위로 커밋하기
 - git add -p
 [김정환님블로그](https://jeonghwan-kim.github.io/dev/2020/02/10/git-usage.html)
+
+## 🍎 merging 상태
+- merging 상태는 병합 도중 충돌이 발생했을 때 나타나는 상태.
+    - 충돌 파일 확인:
+        - 병합 중 충돌이 발생한 파일을 확인한다.
+        - 아래의 명령어를 실행하면 충돌된 파일들이 both modified 상태로 표시될 것이다.
+        - git status
+    - 충돌 해결:
+        - 충돌된 파일을 열어보면 충돌이 발생한 부분에 다음과 같은 형식의 구분선이 있다.
+        ```text
+        <<<<<<< HEAD
+        (현재 브랜치 내용)
+        =======
+        (병합 중인 다른 브랜치 내용)
+        >>>>>>> (브랜치 이름 또는 커밋 ID)
+        ```
+    - 수정 완료 후 add:
+        - 충돌이 발생한 파일을 수정한 후, 수정된 파일을 staging area에 추가한다.
+        ```bash
+        git add <filename>
+        ```
+    - 병합 완료 / 병합 취소
+        ```bash
+        // 병합 완료
+        git merge --continue
+        
+        // 병합 취소
+        git merge --abort
+        ```
 
 ## 🍎 Citation
 [merge](https://mylko72.gitbooks.io/git/content/branch/bcd1_d569.html)
